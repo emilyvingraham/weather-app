@@ -1,6 +1,7 @@
 :root {
     --primary-dark: #15263e;
     --primary-light: #eceff4;
+    --primary-green: #2e4f4f;
     --primary-blue-hover: #1d5d9b;
     --primary-green-hover: #0e8388;
 }
@@ -32,6 +33,11 @@ body {
 .Cities:hover {
     color: var(--primary-blue-hover);
     text-decoration: underline;
+}
+
+.Day {
+    color: var(--primary-dark);
+    font-weight: bolder;
 }
 .Header {
     text-align: center;
@@ -65,7 +71,7 @@ body {
     padding: 8px;
     border-radius: 10px;
     font-size: 12px;
-    background-color: #2e4f4f;
+    background-color: var(--primary-green);
     color: var(--primary-light);
     margin-left: 6px;
 }
@@ -89,14 +95,11 @@ body {
     grid-gap: 10px;
 }
 .grid-2-columns-background {
-    background: linear-gradient(
-        112.1deg,
-        rgb(32, 38, 57) 11.4%,
-        rgb(63, 76, 119) 70.2%
-    );
+    background: var(--primary-green);
     color: var(--primary-light);
     border-radius: 10px;
     padding: 6px;
+    border: 6px solid var(--primary-dark);
 }
 
 .Details p {
@@ -105,7 +108,7 @@ body {
 }
 
 .Footer p {
-    font-size: 10px;
+    font-size: 14px;
 }
 
 .Footer a {
@@ -169,5 +172,13 @@ body {
     table {
         font-size: 12px;
         display: none;
+    }
+
+    .Day {
+        font-size: 14px;
+    }
+
+    .ForecastDegrees {
+        font-size: 12px;
     }
 }

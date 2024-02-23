@@ -3,6 +3,7 @@ import City from './City';
 import Details from './Details';
 import Footer from './Footer';
 import HeaderLinks from './HeaderLinks';
+import Forecast from './Forecast';
 
 import './App.css';
 
@@ -13,6 +14,7 @@ export default function App() {
             <Search />
             <City />
             <Details />
+            <Forecast />
             <Footer />
         </div>
     );
