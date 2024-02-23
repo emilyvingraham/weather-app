@@ -1,38 +1,110 @@
+:root {
+  --primary-dark: #15263e;
+  --primary-light: #eceff4;
+}
+body {
+  background-color: var(--primary-dark);
+}
 .App {
+  font-family: sans-serif;
   text-align: center;
+  border: 1px solid black;
+  max-width: 50%;
+  display: block;
+  margin: 5px auto;
+  border-radius: 10px;
+  background-color: var(--primary-light);
+  font-family: "Poppins", sans-serif;
+}
+.City h1 {
+  font-weight: 700;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Search .form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.Search .user-entered-data {
+  width: 60%;
+  border-radius: 10px;
+  font-size: 12px;
+}
+.Search .user-entered-submit {
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  background-color: var(--primary-dark);
+  color: var(--primary-light);
+}
+.Search .user-entered-submit:hover {
+  background-color: #1d5d9b;
+}
+
+.degree {
+  font-size: 16px;
+  position: relative;
+  bottom: 16px;
+  font-weight: 600;
+}
+
+.grid-2-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  grid-gap: 10px;
+}
+.grid-2-columns-background {
+  background: linear-gradient(
+    112.1deg,
+    rgb(32, 38, 57) 11.4%,
+    rgb(63, 76, 119) 70.2%
+  );
+  color: var(--primary-light);
+  border-radius: 10px;
+  padding: 6px;
 }
 
-.App-link {
-  color: #61dafb;
+.Details p {
+  font-size: 12px;
+  margin-bottom: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Footer p {
+  font-size: 10px;
+}
+
+.Footer a {
+  text-decoration: none;
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+.Footer a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 800px) {
+  .grid-2-columns {
+    display: grid;
+    grid-template-columns: 1fr;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1 {
+    font-size: 20px;
+  }
+  .degree {
+    font-size: 8px;
+    position: relative;
+    bottom: 8px;
+  }
+
+  .Details p {
+    font-size: 10px;
+  }
+
+  .Footer p {
+    font-size: 10px;
   }
 }
