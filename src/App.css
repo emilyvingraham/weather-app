@@ -27,7 +27,6 @@ body {
     color: var(--primary-dark);
     text-decoration: none;
     font-weight: bolder;
-    margin-right: 10px;
 }
 
 .Cities:hover {
@@ -39,44 +38,36 @@ body {
     color: var(--primary-dark);
     font-weight: bolder;
 }
-.Header {
-    text-align: center;
+
+input {
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
 }
 
-.Search .form {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.Search .user-entered-data {
-    width: 60%;
-    border-radius: 10px;
-    font-size: 12px;
-    padding: 8px;
-}
-.Search .user-entered-submit {
-    padding: 8px;
-    border-radius: 10px;
-    font-size: 12px;
+.CitySearch {
     background-color: var(--primary-dark);
     color: var(--primary-light);
-    margin-left: 6px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    transition: all 150ms ease-in-out;
 }
-.Search .user-entered-submit:hover {
+.CitySearch:hover {
     background-color: var(--primary-blue-hover);
 }
 
-.Search .user-entered-current {
-    padding: 8px;
-    border-radius: 10px;
-    font-size: 12px;
+.CurrentSearch {
     background-color: var(--primary-green);
     color: var(--primary-light);
-    margin-left: 6px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    transition: all 150ms ease-in-out;
 }
 
-.Search .user-entered-current:hover {
+.CurrentSearch:hover {
     background-color: var(--primary-green-hover);
 }
 
@@ -143,31 +134,6 @@ body {
     .Footer p {
         font-size: 10px;
     }
-    form {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .user-entered-submit {
-        padding: 5px;
-        width: 126px;
-        font-size: 10px;
-        margin: 2px auto;
-        padding: 6px;
-    }
-    .user-entered-current {
-        padding: 5px;
-        width: 126px;
-        font-size: 10px;
-        margin: 2px auto;
-        padding: 6px;
-    }
-    .user-entered-data {
-        width: 250px;
-        font-size: 30px;
-        margin: 10px auto;
-        font-size: 14px;
-    }
 
     table {
         font-size: 12px;
@@ -180,5 +146,23 @@ body {
 
     .ForecastDegrees {
         font-size: 12px;
+    }
+    input {
+        max-width: 80%;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .CitySearch {
+        width: 100px;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .CurrentSearch {
+        width: 100px;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .App {
+        max-width: 80%;
     }
 }

@@ -3,26 +3,18 @@ import './App.css';
 
 export default function Search() {
     return (
-        <div className="Search">
-            <form className="Form">
-                <input
-                    className="user-entered-data ps-3"
-                    type="text"
-                    placeholder="Enter a city..."
-                />
-                <button
-                    className="user-entered-submit btn"
-                    type="submit button"
-                >
-                    Search
-                </button>
-                <button
-                    className="user-entered-current btn"
-                    type="submit button"
-                >
-                    Current
-                </button>
-            </form>
+        <div className="container">
+            <div className="row">
+                <div className="col-lg-12">
+                    <input type="text" placeholder="Enter a city..." />
+                    <button type="submit" className="CitySearch">
+                        Search
+                    </button>
+                    <button type="submit" className="CurrentSearch">
+                        Current
+                    </button>
+                </div>
+            </div>
         </div>
     );
 }
