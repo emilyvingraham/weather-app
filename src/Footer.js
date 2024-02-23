@@ -15,7 +15,7 @@ export default function Footer() {
                 </a>
                 , is{' '}
                 <a
-                    href="https://github.com/emilyvingraham/plus-final-project-weather"
+                    href="https://github.com/emilyvingraham/weather-app"
                     target="_blank"
                     rel="noreferrer"
                 >
@@ -23,7 +23,7 @@ export default function Footer() {
                 </a>{' '}
                 and{' '}
                 <a
-                    href="https://plus-final-project-weather.netlify.app/"
+                    href="https://weather-app-react-evi.netlify.app/"
                     target="_blank"
                     rel="noreferrer"
                 >
