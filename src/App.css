@@ -1,110 +1,173 @@
 :root {
-  --primary-dark: #15263e;
-  --primary-light: #eceff4;
+    --primary-dark: #15263e;
+    --primary-light: #eceff4;
+    --primary-blue-hover: #1d5d9b;
+    --primary-green-hover: #0e8388;
 }
 body {
-  background-color: var(--primary-dark);
+    background-color: var(--primary-dark);
 }
 .App {
-  font-family: sans-serif;
-  text-align: center;
-  border: 1px solid black;
-  max-width: 50%;
-  display: block;
-  margin: 5px auto;
-  border-radius: 10px;
-  background-color: var(--primary-light);
-  font-family: "Poppins", sans-serif;
+    font-family: sans-serif;
+    text-align: center;
+    border: 1px solid black;
+    max-width: 50%;
+    display: block;
+    margin: 5px auto;
+    border-radius: 10px;
+    background-color: var(--primary-light);
+    font-family: 'Poppins', sans-serif;
 }
 .City h1 {
-  font-weight: 700;
+    font-weight: 700;
+}
+
+.Cities {
+    color: var(--primary-dark);
+    text-decoration: none;
+    font-weight: bolder;
+    margin-right: 10px;
+}
+
+.Cities:hover {
+    color: var(--primary-blue-hover);
+    text-decoration: underline;
+}
+.Header {
+    text-align: center;
 }
 
 .Search .form {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
 .Search .user-entered-data {
-  width: 60%;
-  border-radius: 10px;
-  font-size: 12px;
+    width: 60%;
+    border-radius: 10px;
+    font-size: 12px;
+    padding: 8px;
 }
 .Search .user-entered-submit {
-  padding: 8px;
-  border-radius: 10px;
-  font-size: 12px;
-  background-color: var(--primary-dark);
-  color: var(--primary-light);
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    margin-left: 6px;
 }
 .Search .user-entered-submit:hover {
-  background-color: #1d5d9b;
+    background-color: var(--primary-blue-hover);
+}
+
+.Search .user-entered-current {
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    background-color: #2e4f4f;
+    color: var(--primary-light);
+    margin-left: 6px;
+}
+
+.Search .user-entered-current:hover {
+    background-color: var(--primary-green-hover);
 }
 
 .degree {
-  font-size: 16px;
-  position: relative;
-  bottom: 16px;
-  font-weight: 600;
+    font-size: 16px;
+    position: relative;
+    bottom: 16px;
+    font-weight: 600;
 }
 
 .grid-2-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  align-items: center;
-  grid-gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
 }
 .grid-2-columns-background {
-  background: linear-gradient(
-    112.1deg,
-    rgb(32, 38, 57) 11.4%,
-    rgb(63, 76, 119) 70.2%
-  );
-  color: var(--primary-light);
-  border-radius: 10px;
-  padding: 6px;
+    background: linear-gradient(
+        112.1deg,
+        rgb(32, 38, 57) 11.4%,
+        rgb(63, 76, 119) 70.2%
+    );
+    color: var(--primary-light);
+    border-radius: 10px;
+    padding: 6px;
 }
 
 .Details p {
-  font-size: 12px;
-  margin-bottom: 0px;
+    font-size: 12px;
+    margin-bottom: 0px;
 }
 
 .Footer p {
-  font-size: 10px;
+    font-size: 10px;
 }
 
 .Footer a {
-  text-decoration: none;
-  color: var(--primary-dark);
-  font-weight: 600;
+    text-decoration: none;
+    color: var(--primary-dark);
+    font-weight: 600;
 }
 
 .Footer a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
-@media (max-width: 800px) {
-  .grid-2-columns {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
 
-  h1 {
-    font-size: 20px;
-  }
-  .degree {
-    font-size: 8px;
-    position: relative;
-    bottom: 8px;
-  }
+@media (max-width: 900px) {
+    .grid-2-columns {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
-  .Details p {
-    font-size: 10px;
-  }
+    h1 {
+        font-size: 20px;
+    }
+    .degree {
+        font-size: 8px;
+        position: relative;
+        bottom: 8px;
+    }
 
-  .Footer p {
-    font-size: 10px;
-  }
+    .Details p {
+        font-size: 10px;
+    }
+
+    .Footer p {
+        font-size: 10px;
+    }
+    form {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .user-entered-submit {
+        padding: 5px;
+        width: 126px;
+        font-size: 10px;
+        margin: 2px auto;
+        padding: 6px;
+    }
+    .user-entered-current {
+        padding: 5px;
+        width: 126px;
+        font-size: 10px;
+        margin: 2px auto;
+        padding: 6px;
+    }
+    .user-entered-data {
+        width: 250px;
+        font-size: 30px;
+        margin: 10px auto;
+        font-size: 14px;
+    }
+
+    table {
+        font-size: 12px;
+        display: none;
+    }
 }

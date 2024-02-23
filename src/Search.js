@@ -4,7 +4,7 @@ import './App.css';
 export default function Search() {
     return (
         <div className="Search">
-            <form className="form">
+            <form className="Form">
                 <input
                     className="user-entered-data ps-3"
                     type="text"
@@ -15,6 +15,12 @@ export default function Search() {
                     type="submit button"
                 >
                     Search
+                </button>
+                <button
+                    className="user-entered-current btn"
+                    type="submit button"
+                >
+                    Current
                 </button>
             </form>
         </div>
